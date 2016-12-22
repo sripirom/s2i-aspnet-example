@@ -16,8 +16,7 @@ namespace WebApplication
                 .AddEnvironmentVariables("")
             .Build();
 
-           // fixed
-            var url = config["ASPNETCORE_URLS"] ?? "http://localhost:8080";
+            var url = config["ASPNETCORE_URLS"] ?? "http://172.30.241.227:8081";
 
             var host = new WebHostBuilder()
                 .UseKestrel()
